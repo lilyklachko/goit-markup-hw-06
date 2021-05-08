@@ -74,7 +74,7 @@
                             <label for="tel" class="form-label">Телефон</label>
                             <div class="form-input">
                                 <input type="tel" name="tel" id="tel" class="form-personal-info">
-                                <svg class="form-icon phone">
+                                <svg class="form-icon ">
                                     <use href="./images/symbol-defs.svg#icon-phone-modal"></use>
                                 </svg>
                             </div>
@@ -84,7 +84,7 @@
                             <label for="email" class="form-label">Почта</label>
                             <div class="form-input">
                                 <input type="email" name="email" id="email" class="form-personal-info">
-                                <svg class="form-icon envelope">
+                                <svg class="form-icon ">
                                     <use href="./images/symbol-defs.svg#icon-envelope-modal" ></use>
                                 </svg>
                             </div>
@@ -96,11 +96,12 @@
                         </li>
                     </ul>
                     
-                    <div class="form-agreement">
-                        <input type="checkbox" name="agreements" id="agreements">
-                        <label for="agreements" class="agreement-text">Соглашаюсь с рассылкой и принимаю <a href="" class="form-agreement-link">Условия договора</a></label>
+                    <label class="form-agreement">
+                        <input type="checkbox" name="agreements" class="agreement-checkbox visually-hidden">
+                        <span class="custom-checkbox"></span>
+                        <span class="agreement-text">Соглашаюсь с рассылкой и принимаю <a href="" class="form-agreement-link">Условия договора</a></span>
+                    </label>
                         
-                    </div>
                     <button type="submit" class="submit-button">Отправить</button>
                 </form>                
             </div>
@@ -424,6 +425,18 @@
             
                 </ul>
             </div>
+            <form class="footer-form">
+                <label class="footer-form-input">
+                    <span class="footer-form-input-text">Подпишитесь на рассылку</span>
+                    <input type="email" name="email" class="footer-subsribtion" placeholder="E-mail">
+                </label>
+                <button type="submit" class="footer-submit-btn">Подписаться 
+                        <svg class="footer-send-icon">
+                            <use href="./images/symbol-defs.svg#icon-icon-send-modal"></use>
+                        </svg>
+                   
+                </button>
+            </form>
         </div>
     </footer>
 
