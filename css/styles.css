@@ -352,6 +352,13 @@ header {
   border-radius: 4px;
   cursor: pointer;
 }
+.form-personal-info:focus-within + .form-icon {
+  fill: var(--accent-color);
+}
+.form-personal-info:hover,
+.form-icon:focus {
+  border-color: var(--accent-color);
+}
 .form-label {
   font-size: 12px;
   line-height: 1.16;
@@ -363,22 +370,32 @@ header {
   resize: none;
   width: 448px;
   height: 120px;
+  padding-left: 16px;
 }
-
-/* i have to fins a solition for positioning icons in form */
 .form-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   bottom: 50%;
   left: 14px;
   transform: translateY(50%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
   width: 12px;
+  height: 12px;
+}
+/* how to make sizes for icons correctly??? */
+.form-icon.phone {
+  width: 13px;
+  height: 13px;
+}
+.form-icon.envelope {
+  width: 15px;
   height: 12px;
 }
 .comment::placeholder {
   color: var(--sub-sub-text-color);
+  font-size: 12px;
   line-height: 1.14;
   letter-spacing: 0.01em;
 }
